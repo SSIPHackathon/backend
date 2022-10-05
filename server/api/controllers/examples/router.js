@@ -1,8 +1,8 @@
-import * as express from 'express';
-import controller from './controller';
+import * as express from "express";
+import controller from "./controller";
 
 export default express
   .Router()
-  .post('/', controller.create)
-  .get('/', controller.all)
-  .get('/:id', controller.byId);
+  .post("/otppost", controller.CreateOtp)
+  .post("/verifyotp", controller.CheckOtp)
+  .post("/feedback", controller.FeedBack);
