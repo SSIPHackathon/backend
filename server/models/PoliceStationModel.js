@@ -4,26 +4,29 @@ const PoliceStation = new mongoose.Schema({
   policeStationId: {
     type: String,
   },
-  City: {
+  name_of_office: {
     type: String,
   },
-  District: {
+  address: {
     type: String,
   },
-  SubDivision: {
+  district: {
     type: String,
   },
-  PoliceStation: {
+  off_head: {
     type: String,
   },
-  Email: {
+  off_phone: {
     type: String,
   },
-  Password: {
+  branch: {
     type: String,
   },
   QrCodeCount: {
     type: Number,
+  },
+  password: {
+    type: String,
   },
 });
 
