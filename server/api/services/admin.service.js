@@ -1,7 +1,9 @@
+import AdminModel from "../../models/AdminModel";
+
 class AdminService {
   async verifyAdmin(email, password) {
     const host = email.split("@")[0];
-    const obj = Admin.findOne(
+    const obj = AdminModel.findOne(
       { policeStationId: host, password: password },
       (err, admin) => {
         if (err) {

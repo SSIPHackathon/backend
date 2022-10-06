@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const PoliceStation = new mongoose.Schema({
+const AdminModel = new mongoose.Schema({
   policeStationId: {
     type: String,
   },
@@ -30,4 +30,4 @@ const PoliceStation = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("PoliceStation", PoliceStation);
+export default mongoose.model("AdminModel", AdminModel);
